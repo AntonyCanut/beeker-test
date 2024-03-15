@@ -1,0 +1,12 @@
+name: add-example-class
+label: 'Add example class'
+description: 'Add an example class into directory.'
+group: 'Add'
+
+variables:
+  - name: name
+    label: Name
+
+rules:
+  - name: add-example-class
+    target: ./example-class.js
