@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: test
-  namespace: test
+  name: metnimportequoi
+  namespace: default
 spec:
   selector:
-    app: test
+    app: metnimportequoi
   ports:
     - protocol: TCP
       port: 80
