@@ -3,11 +3,6 @@ label: 'Add a deployment'
 description: 'Add a K8S deployment in Kubernetes'
 group: 'Add'
 
-consts:
-  projectName: my-project
-  namespace: my-namespace
-  target: ../
-
 variables:
   - name: name
     label: Name
