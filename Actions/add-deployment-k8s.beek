@@ -1,0 +1,6 @@
+The language is yaml.
+
+Create a deployment kubernetes with application named {{name}}
+The namespace need to be {{namespace}}
+Expose the container to port {{port}}
+Create only the deployment

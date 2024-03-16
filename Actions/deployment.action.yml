@@ -1,0 +1,23 @@
+name: add-deployment-k8s
+label: 'Add a deployment'
+description: 'Add a K8S deployment in Kubernetes'
+group: 'Add'
+
+consts:
+  projectName: my-project
+  namespace: my-namespace
+  target: ../
+
+variables:
+  - name: name
+    label: Name
+  - name: namespace
+    label: Namespace
+  - name: port
+    label: Port
+    
+rules:
+  - name: add-deployment-k8s
+    target: ../deployment.yaml
+  - name: add-service-k8s
+    target: ../service.yaml
