@@ -1,0 +1,22 @@
+name: add-deployment-k8s
+label: 'Add a deployment'
+description: 'Add a K8S deployment in Kubernetes'
+group: 'Add'
+
+variables:
+  - name: port
+    label: Port
+    default_value: 80
+  - name: path
+    label: Path
+    default_value: 80
+    
+rules:
+  - name: add-service-k8s
+    target: ./service.yaml
+    context: ../../project.json
+  - name: add-deployment-k8s
+    context: 
+      - ../../project.json
+      - ../../Contexts/MyApp.txt
+    target: ./deployment.yaml

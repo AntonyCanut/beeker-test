@@ -1,0 +1,6 @@
+{
+    "name": "my-super-project",
+    "namespace": "galaxy",
+    "cores": "1",
+    "Ram": "1Go"
+}

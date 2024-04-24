@@ -1,0 +1,5 @@
+The language is yaml.
+
+Use project.json to configure
+Expose the container to port {{port}}
+Create only the deployment

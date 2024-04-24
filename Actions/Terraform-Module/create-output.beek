@@ -1,0 +1,6 @@
+The language is tf.
+
+{{prompt}}
+
+But This file is output.tf, it must contain only output, no resources, no variables for the module.
+Each resources must have "example" as resource identifier.

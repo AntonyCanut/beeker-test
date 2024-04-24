@@ -1,0 +1,8 @@
+The language is tf.
+
+{{prompt}}
+
+But This file is main.tf, it file must contain only main, no variables, no output for the module.
+Each resources must have "example" as resource identifier.
+Each name of the resource must have "name" as var + type like this (for the resource group example)
+name = "${var.name}-rg"

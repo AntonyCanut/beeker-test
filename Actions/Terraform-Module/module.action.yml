@@ -1,0 +1,17 @@
+name: module-terraform
+label: 'Create a terraform module'
+description: 'Make a terraform module'
+group: 'Add'
+
+variables:
+  - name: prompt
+    label: Prompt
+    default_value: 'Create a terraform module'
+
+rules:
+  - name: create-vars
+    target: ./vars.tf
+  - name: create-output
+    target: ./output.tf
+  - name: create-main
+    target: ./main.tf

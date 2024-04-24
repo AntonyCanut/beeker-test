@@ -1,0 +1,7 @@
+The language is tf.
+
+{{prompt}}
+
+But This file is vars.tf, it must contain only vars, no resources, no output for the module.
+You must have a variable name because we will use it for the main like this (for the resource group example)
+name = "${var.name}-rg"

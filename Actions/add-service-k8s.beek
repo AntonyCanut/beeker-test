@@ -1,6 +1,0 @@
-The language is yaml.
-
-Create a service kubernetes with application named {{name}}
-The namespace need to be {{namespace}}
-Use the port {{port}}
-Create only the service

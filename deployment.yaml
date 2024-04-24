@@ -1,20 +1,27 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: test
-  namespace: test
+  name: my-super-project
+  namespace: galaxy
 spec:
   selector:
     matchLabels:
-      app: test
+      app: my-super-project
   replicas: 1
   template:
     metadata:
       labels:
-        app: test
+        app: my-super-project
     spec:
       containers:
-      - name: test
-        image: test:latest
+      - name: my-super-project
+        image: nginx:latest
         ports:
         - containerPort: 80
+        resources:
+          requests:
+            memory: "1Gi"
+            cpu: "1"
+          limits:
+            memory: "1Gi"
+            cpu: "1"
